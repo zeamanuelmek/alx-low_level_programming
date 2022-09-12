@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible combinations of two diff digits, in ascending order, sepatated by a comma followed by a space.
- *
- * Return: Always zero
+ * main - prints all possible combinations of two diff digits,
+ * in ascending order, sepatated by a comma followed by a space.
+ *Return: Always zero
  */
 
 int main(void)
