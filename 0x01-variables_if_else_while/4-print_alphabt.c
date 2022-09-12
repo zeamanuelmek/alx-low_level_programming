@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * main - print lowercase alpha a-z remove 'q' and 'e'
+ * main - print lowercase alpha a-z remove q and e
  * Return: always 0 (Success)
  */
 
