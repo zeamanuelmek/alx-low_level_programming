@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <string.h>
 /*
  * main - print lowercase alpha a-z remove q and e
  * Return: always 0 (Success)
