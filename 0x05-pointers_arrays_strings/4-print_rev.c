@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_rev - prints a string, in reverse, followed by a new line
- * @s: string to reverse
+ *print_rev - prints a string, in reverse, followed by a new line
+ *@s: string to reverse
  */
 
 void print_dev(char *s)
@@ -11,21 +11,10 @@ void print_dev(char *s)
 	int len = 0;
 	int i;
 
-	/*iterate to find length of string and point to last character*/
-	while (*s != '\0')
-	{
-		len++;
-		++s;
-	}
+	while (s[i++])
+		len ++;
+	for (i = len - 1; i >= 0; i--)
+		putchar(s[index]);
 
-/* go back to characher before null character */
-s--;
-
-/* print string reversed */
-for (i = len; i > 0; i--)
-{
-	putchar(*s);
-	s--;
-}
-putchar('\n');
+	putchar('\n');
 }
