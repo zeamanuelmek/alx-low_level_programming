@@ -3,9 +3,6 @@
 /**
  *define
  */
-int _putchar(char c);
-/*puts character to standard output
- */
 void reset_to_98(int *n);
 /*takes a pointer to an int as parameter and updates the value it points to.
  */
