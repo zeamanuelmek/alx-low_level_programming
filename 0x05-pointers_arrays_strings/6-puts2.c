@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strlen - returns the length of the strig
- * Return: 0
+ *_strlen - returns the length of the string
+ *@s: string
+ *Return: length
  */
 int _strlen(char *s)
 {
@@ -10,19 +11,24 @@ int _strlen(char *s)
 	 
 	while (*s != '\0')
 	{
-		len ++;
+		len++;
 		s++;
 	}
+
 	return (len);
 }
+
 /**
- * puts2 - prints every second char
+ *puts2 - prints every second character of a string,
+ *followed by a new line.
+ *@str: string to print.
  */
+
 void puts2(char *str)
 {
 	int i;
 
-	for (i = 0; str[i] != '\0' && i < _strlen(str); i+= 2)
+	for (i = 0; str[i] != '\0' && i < _strlen(str); i += 2)
 		putchar(str[i]);
 
 	putchar('\n');
