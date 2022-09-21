@@ -46,5 +46,5 @@ char *_strcpy(char *dest, char *src);
  *  Return: integer
  */
 int _atoi(char *s);
-void string_length(char*);
+void string_length(char *);
 #endif
