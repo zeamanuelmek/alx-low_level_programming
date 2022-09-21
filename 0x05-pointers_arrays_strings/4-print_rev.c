@@ -14,7 +14,7 @@ void print_dev(char *s)
 	while (s[i++])
 		len ++;
 	for (i = len - 1; i >= 0; i--)
-		putchar(s[index]);
+		putchar(s[i]);
 
 	putchar('\n');
 }
