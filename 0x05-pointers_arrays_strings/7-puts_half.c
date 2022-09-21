@@ -23,7 +23,7 @@ int _strlen(char *s)
  */
 void puts_half(char *str)
 {
-	int index = 0; len = 0; n;
+	int index = 0, len = 0, n;
 	
 	while (str[index++])
 		len++;
