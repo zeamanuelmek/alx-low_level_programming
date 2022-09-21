@@ -21,8 +21,8 @@ s--;
 /* print string reversed */
 for (i = len; i > 0; i--)
 {
-	_putchar(*s);
+	putchar(*s);
 	s--;
 }
-_putchar('\n');
+putchar('\n');
 }
