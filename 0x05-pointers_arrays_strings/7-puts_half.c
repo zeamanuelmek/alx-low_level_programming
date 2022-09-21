@@ -23,17 +23,19 @@ int _strlen(char *s)
  */
 void puts_half(char *str)
 {
-	int idx;
-	int len = _strlen(str);
+	int index = 0; len = 0; n;
+	
+	while (str[index++])
+		len++;
 
-	/** find the index to start depending on even/odd amount of stren*/
-	if (len % 2 != 0)
-		idx = (len / 2) + 1;
-	else 
-		idx = (len / 2);
-	while (idx < len)
-	{
-		putchar(*(str + idx));
-	}
+	if ((len % 2) == 0)
+		n = len / 2;
+
+	else
+		n = (len + 1) / 2;
+
+	for (index = n; index < len; index++)
+		putchar(str[index]);
+
 	putchar('\n');
 }
