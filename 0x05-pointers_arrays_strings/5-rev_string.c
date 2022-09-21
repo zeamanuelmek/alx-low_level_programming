@@ -4,7 +4,7 @@
  * _strlen - returns the length of a string
  * Return: 0
  */
-int _strlen(char *s);
+int _strlen(char *s)
 {
 	int len = 0;
 
@@ -14,4 +14,19 @@ int _strlen(char *s);
 		s++;
 	}
 	return (len);
+}
+
+void rev_string(char *s)
+{
+	int i = 0;
+	int j = (_strlen(s) - 1);
+	char tmp;
+
+	while (i < j)
+	{
+		tmp = s[i];
+		s[i] = s[j];
+		s[j] = tmp;
+		i++, j--;
+	}
 }
