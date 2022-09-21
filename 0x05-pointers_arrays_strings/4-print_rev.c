@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * stringth_length - finds the length of a string.
- * Return: length of c.
- * @pointer: pointer
+ *string_length - finds the length of a string.
+ *Return: length of c.
+ *@pointer: pointer
  */
 int string_length(char *pointer)
 {
