@@ -5,20 +5,6 @@
  * @src: string to append.
  * Return: concatenated string
  */
-char *strcat(char *dest, char *src)
-{
-	int i = 0;
-	int j = 0;
-
-	while (dest[i] != '\0')
-		i++;
-
-	while (*(src + j))
-	{
-		*(dest+i) = *(src+j);
-		i++;
-		j++;
-	}
-	*(dest+i) = '\0';
+char *strcat(char *dest, 
 	return (dest);
 }
