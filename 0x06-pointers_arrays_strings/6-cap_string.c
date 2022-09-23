@@ -7,48 +7,64 @@
  */
 char *cap_string(char *str)
 {
-	int i = 0;
+	int i;
 
 
 
-		/* check first index for capital */
+		for (i = 0; str[i] != '\0'; i++)
 
-		if (s[i] >= 'a' && s[i] <= 'z')
+				{
 
-					s[i] = s[i] - 'a' + 'A';
+							if (i == 0)
 
-			i++;
+										{
 
+														if ((str[i] >= 97 && str[i] <= 122))
 
+																		{
 
-				while (s[i] != '\0') /* iterate through string */
+																							str[i] = str[i] - 32;
 
-						{
+																											continue;
 
+																														}
 
+																}
 
-									/* if lowercase and prior char is separator, capitalize*/
+									else if (str[i] == ' ')
 
-									if ((s[i] >= 'a' && s[i] <= 'z')
+												{
 
-													    && (s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '.' ||
+																++i;
 
-														    			s[i - 1] == '!' || s[i - 1] == '?' || s[i - 1] == '"' ||
+																			if (str[i] >= 97 && str[i] <= 122)
 
-																				s[i - 1] == '(' || s[i - 1] == ')' || s[i - 1] == '{' ||
+																							{
 
-																							s[i - 1] == '}' || s[i - 1] == ' ' || s[i - 1] == '\t'
+																												str[i] = str[i] - 32;
 
-																										|| s[i - 1] == '\n'))
+																																continue;
 
-													s[i] = s[i] - 'a' + 'A';
+																																			}
 
-											i++;
+																					}
+
+											else
+
+														{
+
+																		if (str[i] >= 65 && str[i] <= 90)
+
+																						{
+
+																											str[i] = str[i] + 32;
+
+																														}
+
+																				}
 
 												}
 
-
-
-					return (s);
+			return (str);
 
 }
