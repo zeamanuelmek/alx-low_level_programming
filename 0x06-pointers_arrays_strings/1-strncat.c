@@ -9,18 +9,16 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i = 0, j = 0;
+	int i = 0;
 
-	while (dest[i] != '\0') /*i is index of null terminator*/
-		i++;
+	while (*dest)
+		dest++;
 
-	while (src[j] != src[n]) /*append replacing null terminator*/
+	for (i = 0; i < n; i++)
 	{
-		dest[i] = src[j];
-		i++;
-		j++;
+		*dest = src;
+		dest++;
+		src++;
 	}
 	dest[i] = '\0';
-	
-	return (dest);
 }
