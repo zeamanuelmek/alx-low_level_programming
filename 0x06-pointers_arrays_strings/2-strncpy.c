@@ -8,7 +8,7 @@
  * @n: the max no. of bytes to be copied from src.
  * Return: A pointer resulting string dest.
  */
-char *strncpy(char *dest, char *src,int n)
+char *_strncpy(char *dest, char *src,int n)
 {
 	int i;
 	
