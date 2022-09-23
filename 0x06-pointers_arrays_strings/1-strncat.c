@@ -7,14 +7,14 @@
  * @n: append n number of bytes(chars)
  * @Return: concatenated string.
  */
-char *strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0, dn = 0;
 
 	while (dest[i++])
 		dn++;
 
-	for (i = 0; src[i] && i < dn; i++)
+	for (i = 0; src[i] && i < n; i++)
 			dest[dn++] = src[i];
 	
 	return (dest);
