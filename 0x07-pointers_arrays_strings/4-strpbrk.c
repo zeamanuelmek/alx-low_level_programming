@@ -2,13 +2,13 @@
 #define NULL 0
 
 /**
- * _strbrk: return pointer to byte in s.
+ * _strpbrk: return pointer to byte in s.
  * @s: string to search.
  * @accept: target matches.
  * Return: pointer to index of string at first occurence.
  */
 
-char *_strbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int i = 0, j;
 
