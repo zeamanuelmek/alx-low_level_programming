@@ -25,4 +25,5 @@ void print_diagsums(int *a, int size)
 		diagonal_sum_2 += a[i];
 	}
 
-	printf("%d,  \n"
+	printf("%d, %d\n", diagonal_sum_1, diagonal_sum_2);
+}
