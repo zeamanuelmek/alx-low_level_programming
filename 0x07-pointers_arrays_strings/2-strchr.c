@@ -1,5 +1,4 @@
 #include "main.h"
-#define NULL
 
 /**
  *_strchr: locate 1st occurrence of char in string
@@ -11,13 +10,12 @@
 
 char *_strchr(char *s, char c)
 {
-	int i = 0;
+	int i;
 
-	while (*(s + i) && *(s + i) != c) /* find match */
-		i++;
-
-	if ((s + i) == c) /* if match, assign to address */
+	for (i = 0; s[i] >= '\0'; i++)
+	{
+		if (s[i] == c) /* if match, assign to address */
 		return (s + i);
-	else 
-		return (NULL);
+	}
+		return ('\0');
 }
