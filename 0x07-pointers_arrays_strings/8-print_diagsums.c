@@ -13,12 +13,11 @@ void print_diagsums(int *a, int size)
 	int diagonal_sum_2 = 0;
 	int row, i;
 
-	for (row = 0; wor < size; row++)
+	for (row = 0; row < size; row++)
 	{
 		i = (row * size) + row;
 		diagonal_sum_1 += a[i];
 	}
-
 	for (row = 1; row <= size; row++)
 	{
 		i = (row * size) - row;
