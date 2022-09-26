@@ -1,5 +1,5 @@
 #include "main.h"
-#define NUL 0
+#define NULL 0
 
 /**
  * _strbrk: return pointer to byte in s.
@@ -24,5 +24,5 @@ char *_strbrk(char *s, char *accept)
 		}
 		i++;
 	}
-	return (NUL);
+	return (NULL);
 }
