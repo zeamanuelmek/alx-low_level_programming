@@ -1,5 +1,6 @@
 #include "main.h"
 #include <unistd.h>
+#include <stdio.h>
 /**
  * _puts_recursion: print string with a new line.
  * @s: string to print.
