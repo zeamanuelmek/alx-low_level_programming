@@ -8,7 +8,7 @@
  * Return: true only if entire string is a number, false if not
  */
 
-bool is_num(char *argvv[])
+bool is_num(char *argvv)
 {
 	int j = 0;
 
