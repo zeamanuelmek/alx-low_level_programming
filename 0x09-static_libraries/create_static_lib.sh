@@ -1,2 +1,4 @@
 #!/bin/bash
-gcc -c -Wall -Wextra *.c && ar -rcs liball.a *.o
+gcc -c *.c
+ar rc liball.a *.o
+ranlib liball.a
